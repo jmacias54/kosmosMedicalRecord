@@ -1,0 +1,26 @@
+databaseChangeLog:
+  - changeSet:
+      id: create_table_doctors
+      author: jesus.macias
+      changes:
+        - createTable:
+            tableName: doctors
+            columns:
+              - column:
+                  name: Id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: name
+                  type: VARCHAR(80)
+              - column:
+                  name: last_name
+                  type: VARCHAR(255)
+              - column:
+                  name: second_last_name
+                  type: VARCHAR(255)
+              - column:
+                  name: specialty
+                  type: VARCHAR(255)

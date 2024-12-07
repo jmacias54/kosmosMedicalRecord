@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: add_fk_appointment
+      author: jesus.macias
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: doctor_id
+            baseTableName: appointment
+            constraintName: fk_appointment_doctor
+            deferrable: false
+            initiallyDeferred: false
+            referencedColumnNames: id
+            referencedTableName: doctors
+        - addForeignKeyConstraint:
+              baseColumnNames: consulting_room_id
+              baseTableName: appointment
+              constraintName: fk_consulting_room_id
+              deferrable: false
+              initiallyDeferred: false
+              referencedColumnNames: id
+              referencedTableName: consulting_room

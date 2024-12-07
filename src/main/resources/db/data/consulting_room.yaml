@@ -1,0 +1,54 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert_data_into_consulting_room
+      author: jesus.macias
+      changes:
+        - insert:
+            tableName: consulting_room
+            columns:
+              - column:
+                  name: number
+                  value: 101
+              - column:
+                  name: floor
+                  value: 1
+
+        - insert:
+            tableName: consulting_room
+            columns:
+              - column:
+                  name: number
+                  value: 102
+              - column:
+                  name: floor
+                  value: 1
+
+        - insert:
+            tableName: consulting_room
+            columns:
+              - column:
+                  name: number
+                  value: 201
+              - column:
+                  name: floor
+                  value: 2
+
+        - insert:
+            tableName: consulting_room
+            columns:
+              - column:
+                  name: number
+                  value: 202
+              - column:
+                  name: floor
+                  value: 2
+
+        - insert:
+            tableName: consulting_room
+            columns:
+              - column:
+                  name: number
+                  value: 301
+              - column:
+                  name: floor
+                  value: 3

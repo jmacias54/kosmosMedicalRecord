@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - include:
+      file: db/creation_tables/doctors.yaml
+  - include:
+      file: db/creation_tables/consulting_room.yaml
+  - include:
+      file: db/creation_tables/appointment.yaml
+  - include:
+      file: db/settings/appointment_fk_settings.yaml
+  - include:
+      file: db/data/doctors.yaml
+  - include:
+      file: db/data/consulting_room.yaml
+
+
+
+
+
+

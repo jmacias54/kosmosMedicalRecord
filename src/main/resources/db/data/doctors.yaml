@@ -1,0 +1,84 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert_data_into_doctors
+      author: jesus.macias
+      changes:
+        - insert:
+            tableName: doctors
+            columns:
+              - column:
+                  name: name
+                  value: 'John'
+              - column:
+                  name: last_name
+                  value: 'Smith'
+              - column:
+                  name: second_last_name
+                  value: 'Doe'
+              - column:
+                  name: specialty
+                  value: 'Cardiology'
+
+        - insert:
+            tableName: doctors
+            columns:
+              - column:
+                  name: name
+                  value: 'Jane'
+              - column:
+                  name: last_name
+                  value: 'Johnson'
+              - column:
+                  name: second_last_name
+                  value: 'Williams'
+              - column:
+                  name: specialty
+                  value: 'Pediatrics'
+
+        - insert:
+            tableName: doctors
+            columns:
+              - column:
+                  name: name
+                  value: 'Robert'
+              - column:
+                  name: last_name
+                  value: 'Miller'
+              - column:
+                  name: second_last_name
+                  value: 'Brown'
+              - column:
+                  name: specialty
+                  value: 'Orthopedics'
+
+        - insert:
+            tableName: doctors
+            columns:
+              - column:
+                  name: name
+                  value: 'Emily'
+              - column:
+                  name: last_name
+                  value: 'Davis'
+              - column:
+                  name: second_last_name
+                  value: 'Taylor'
+              - column:
+                  name: specialty
+                  value: 'Dermatology'
+
+        - insert:
+            tableName: doctors
+            columns:
+              - column:
+                  name: name
+                  value: 'Michael'
+              - column:
+                  name: last_name
+                  value: 'Wilson'
+              - column:
+                  name: second_last_name
+                  value: 'Moore'
+              - column:
+                  name: specialty
+                  value: 'Internal Medicine'

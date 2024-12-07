@@ -1,0 +1,22 @@
+
+databaseChangeLog:
+  - changeSet:
+      id: create_table_consulting_room
+      author: jesus.macias
+
+      changes:
+        - createTable:
+            tableName: consulting_room
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: number
+                  type: INTEGER
+              - column:
+                  name: floor
+                  type: INTEGER

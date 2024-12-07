@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: create_table_appointment
+      author: jesus.macias
+      changes:
+        - createTable:
+            tableName: appointment
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: consulting_room_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: doctor_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: consultation_schedule
+                  type: DATETIME
+              - column:
+                  name: patient_name
+                  type: VARCHAR(255)
